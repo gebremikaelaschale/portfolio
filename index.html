@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gebremikael Aschale - Luminous Portfolio</title>
+    <link rel="stylesheet" href="gebre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="interactive-canvas-background"></canvas>
+
+    <header id="main-header">
+        <button id="menu-toggle-button" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo-container">
+            <svg id="logo-svg" width="40" height="40" viewBox="0 0 100 100" fill="var(--primary-color)">
+                <circle cx="50" cy="50" r="45" stroke="var(--primary-color)" stroke-width="8" fill="none"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="40" font-weight="bold">GA</text>
+            </svg>
+            <span class="site-name">Gebremikael Aschale</span>
+        </div>
+    </header>
+
+    <nav id="main-navigation-panel">
+        <div class="nav-panel-header">
+            <img src="gebre.jpg" alt="Gebremikael Aschale" class="nav-profile-pic">
+            <h4>Gebremikael Aschale</h4>
+            <p class="nav-subtitle">CS Student</p>
+            <div id="nav-brief-info" class="nav-brief-info-text"></div>
+        </div>
+        <ul class="nav-links-list">
+            <li><a href="#home" class="nav-item-link active-nav-item" data-page="home"><i class="fas fa-palette"></i><span>Home</span></a></li>
+            <li><a href="#about" class="nav-item-link" data-page="about"><i class="fas fa-user-circle"></i><span>About</span></a></li>
+            <li><a href="#skills" class="nav-item-link" data-page="skills"><i class="fas fa-atom"></i><span>Skills</span></a></li>
+            <li><a href="#projects" class="nav-item-link" data-page="projects"><i class="fas fa-layer-group"></i><span>Projects</span></a></li>
+            <li><a href="#contact" class="nav-item-link" data-page="contact"><i class="fas fa-paper-plane"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="nav-panel-footer">
+            <a href="mailto:gebereaschale@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://t.me/Ey2014" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="tel:0929111744" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+    </nav>
+
+
+    <main id="page-content-wrapper">
+        <section id="home" class="content-section active-section">
+            <div class="section-container">
+                <h1 class="section-title elegant-title">Hello, I'm Gebremikael.</h1>
+                <p class="lead-paragraph">A passionate Computer Science student from Gonder University, exploring the vibrant world of technology and software development.</p>
+                
+                <div class="home-profile-showcase">
+                    <div class="profile-image-wrapper-home">
+                        <img src="gebre.jpg" alt="Gebremikael Aschale" class="profile-pic-home">
+                    </div>
+                    <div class="profile-text-home">
+                        <h2>Gebremikael Aschale</h2>
+                        <p>Computer Science Student | Gonder University</p>
+                        <p class="profile-welcome-text">Welcome to my portfolio! I'm excited to share my journey and projects with you.</p>
+                    </div>
+                </div>
+
+                <div class="cta-buttons-group">
+                    <a href="#projects" class="cta-btn primary-cta nav-trigger" data-page="projects">Explore My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="cta-btn secondary-cta nav-trigger" data-page="contact">Let's Connect</a>
+                </div>
+                
+                <svg class="home-decorative-svg" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:var(--accent-color-light);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M10 80 Q 70 150, 150 80 T 290 80" stroke="url(#grad1)" stroke-width="6" fill="none"  />
+                    <circle cx="50" cy="60" r="8" fill="var(--accent-color-light)" />
+                    <circle cx="150" cy="40" r="12" fill="var(--primary-color)" />
+                    <circle cx="250" cy="70" r="10" fill="var(--primary-color)" fill-opacity="0.5"/>
+                </svg>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">About My Journey</h2>
+                <div class="about-content-flex">
+                    <div class="about-text">
+                        <p>I am Gebremikael Aschale, currently enriching my knowledge in Computer Science at Gonder University. My fascination with technology is not just academic; it's a drive to create, innovate, and solve problems through code.</p>
+                        <p>With a medium skill set that I am continuously working to expand, I am enthusiastic about web technologies, software architecture, and the endless possibilities that data science offers. I believe in the power of collaboration and persistent learning.</p>
+                        <p>This portfolio is a canvas for my aspirations and achievements. Welcome!</p>
+                        <ul class="personal-info-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Gonder, Ethiopia</li>
+                            <li><i class="fas fa-university"></i> Gonder University</li>
+                            <li><i class="fas fa-envelope"></i> gebereaschale@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="about-image-container">
+                        <img src="gebre1.jpg" alt="Gebremikael Aschale Portrait" class="about-profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-showcase-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h3>HTML</h3>
+                        <p>Structuring modern web content.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h3>CSS</h3>
+                        <p>Styling with Flexbox, Grid, Animations.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interactive & dynamic web experiences.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-java skill-icon"></i>
+                        <h3>Java</h3>
+                        <p>(Write Once, Run Anywhere - WORA).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-layout-grid">
+                    <div class="project-item-card">
+                        <div class="project-item-image-wrapper">
+                            <img src="sport.jpg" alt="Project One Preview">
+                        </div>
+                        <div class="project-item-content">
+                            <h4>Sport Managment System</h4>
+                            <p>
+                                "Last month, through the advanced course I attended, I built a comprehensive Sport Management System. This system enhances the capacity of sport institutions by modernizing sport data handling and streamlining processes."
+                            </p>
+                            <div class="project-item-tags"><span>SQL</span></div>
+                            <div class="project-item-links">
+                                <a href="#" class="project-link-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item-card">
+                        <div class="project-item-image-wrapper">
+                            <img src="criminal.jpg" alt="Project Two Preview">
+                        </div>
+                        <div class="project-item-content">
+                            <h4>Criminal Case Management System</h4>
+                            <p>
+                                "Last month, based on advanced concepts of Object-Oriented Programming (OOP) and Data Structures & Algorithms (DSA), I created a Criminal Case Management System. This project modernizes processes from case registration to tracking, making accurate information rapidly accessible and significantly contributing to the justice system."
+                            </p>
+                            <div class="project-item-tags"><span>Java</span><span>Algorithms</span></div>
+                            <div class="project-item-links">
+                                <a href="#" class="project-link-btn" target="_blank"><i class="fas fa-file-alt"></i> Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Let's Create Together</h2>
+                <p class="contact-intro">Have a project idea, a question, or just want to say hello? I'd love to hear from you.</p>
+                <form id="main-contact-form" class="contact-form-layout" novalidate>
+                    <div class="form-field">
+                        <input type="text" id="contact-name" name="name" required placeholder=" ">
+                        <label for="contact-name">Your Name</label>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="contact-email" name="email" required placeholder=" ">
+                        <label for="contact-email">Your Email</label>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-field">
+                        <input type="password" id="contact-password" name="password" required placeholder=" ">
+                        <label for="contact-password">Password</label>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" id="contact-subject" name="subject" placeholder=" ">
+                        <label for="contact-subject">Subject (Optional)</label>
+                    </div>
+                    <div class="form-field full-width-field">
+                        <textarea id="contact-message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="contact-message">Your Message</label>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="submit-form-button">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="direct-contact-info">
+                    <p>Or reach out directly:</p>
+                    <span><i class="fas fa-envelope"></i> gebereaschale@gmail.com</span>
+                    <span><i class="fab fa-telegram-plane"></i> @Ey2014</span>
+                    <span><i class="fas fa-phone"></i> 0929111744</span>
+                </div>
+            </div>
+        </section>
+
+        <footer id="main-site-footer">
+            <p>© <span id="footer-current-year"></span> Gebremikael Aschale. Crafted with passion.</p>
+        </footer>
+    </main>
+    
+    <div id="nav-overlay"></div>
+
+    <script src="gebre.js"></script>
+</body>
+</html>
